@@ -22,6 +22,8 @@ All models share one protocol: 256-byte vocabulary, dim 512, 6 layers, 8 heads x
 
 - Parameters: 32.38 M
 - Causality check: pass (largest change of earlier outputs 0.0e+00)
+- Peak GPU memory at length 2048 (batch 1): train skipped after OOM, inference OOM
+- Peak GPU memory at length 8192 (batch 1): train skipped after OOM, inference skipped after OOM
 
 ## Tests
 

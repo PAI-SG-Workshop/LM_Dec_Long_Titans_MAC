@@ -1,0 +1,51 @@
+{
+ "model": "titans",
+ "repo": "(new) lucidrains/titans-pytorch",
+ "target_repo": "LM_Dec_Long_Titans_MAC",
+ "category": "Long",
+ "upstream": "lucidrains/titans-pytorch (MIT)",
+ "unified": [
+  "MemoryAsContextTransformer (titans-pytorch 0.4.22, last version for torch 2.5): segments 128, neural memory in layers 2 and 4, 4 persistent + 4 long-term memory tokens"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-11-16 13:18:33",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": "OOM",
+   "infer": {
+    "peak_mb": 7057.6,
+    "ms": 3772.2,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": "skipped after OOM",
+   "infer": {
+    "peak_mb": 13334.0,
+    "ms": 20142.2,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": "skipped after OOM",
+   "infer": "OOM"
+  },
+  {
+   "len": 4096,
+   "train": "skipped after OOM",
+   "infer": "skipped after OOM"
+  },
+  {
+   "len": 8192,
+   "train": "skipped after OOM",
+   "infer": "skipped after OOM"
+  }
+ ],
+ "seconds": 169.4
+}
