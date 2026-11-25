@@ -8,17 +8,17 @@
   "MemoryAsContextTransformer (titans-pytorch 0.4.22, last version for torch 2.5): segments 128, neural memory in layers 2 and 4, 4 persistent + 4 long-term memory tokens"
  ],
  "torch": "2.5.1+cu124",
- "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "gpu": "NVIDIA GeForce RTX 4090",
  "stage": "scaling",
- "started": "2026-11-16 13:18:33",
+ "started": "2026-11-24 09:36:44",
  "smoke": false,
  "rows": [
   {
    "len": 512,
    "train": "OOM",
    "infer": {
-    "peak_mb": 7057.6,
-    "ms": 3772.2,
+    "peak_mb": 7055.6,
+    "ms": 172.7,
     "dtype": "bf16"
    }
   },
@@ -26,8 +26,8 @@
    "len": 1024,
    "train": "skipped after OOM",
    "infer": {
-    "peak_mb": 13334.0,
-    "ms": 20142.2,
+    "peak_mb": 13334.6,
+    "ms": 362.4,
     "dtype": "bf16"
    }
   },
@@ -47,5 +47,5 @@
    "infer": "skipped after OOM"
   }
  ],
- "seconds": 169.4
+ "seconds": 5.6
 }
